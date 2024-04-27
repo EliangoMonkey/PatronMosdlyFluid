@@ -1,0 +1,73 @@
+body{
+    background-color: rgb(103, 141, 155);
+}
+.container{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+nav{
+    text-align: center;
+    margin: 2vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5vh;
+    color:rgb(255, 216, 179);
+}
+
+section{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+section:nth-child(1){
+    background-color: rgb(195, 38, 38);
+}
+section:nth-child(2){
+    background-color: rgb(62, 38, 195);
+}
+section:nth-child(3){
+    background-color: rgb(83, 195, 38);
+}
+.columna4{
+    background: rgb(255, 245, 49);
+}
+.columna5{
+    background: rgb(255, 61, 194);
+}
+
+.columna1,
+.columna2,
+.columna3,
+.columna4,
+.columna5{
+    width: 100%;
+    height: 50px;
+
+}
+
+@media (min-width: 600px){
+    .columna1,
+    .columna2,
+    .columna3,
+    .columna4,
+    .columna5{
+        width: 50%;
+    }
+}
+
+@media (min-width: 800px){
+    .columna1{width: 60%;}
+    .columna2{width: 40%;}
+    .columna3,
+    .columna4,
+    .columna5{width: 33.33%;}
+    .container{
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*--------------nth:child-------------*/
+section:nth-child(1){
+    background-color: rgb(195, 38, 38);
+}
